@@ -2,13 +2,12 @@ import React from "react";
 import PrimaryLayout from "../layouts/PrimaryLayout";
 import {Form, Button} from 'react-bootstrap';
 
-
 // cntl + f2 ==   selelects types elemetns on page
 export default () => {
-    return (
-      <PrimaryLayout column="col-10">
-        <div className="p-5">
-          <h2>CONTACT US</h2>
+  return (
+    <PrimaryLayout column="col-10">
+      <div className="p-5">
+        <h2>CONTACT US</h2>
           <Form>
             <Form.Group controlId="contactForm.Email">
               <Form.Label>Email address</Form.Label>
@@ -25,8 +24,8 @@ export default () => {
             <Form.Group controlId="contactForm.Submit">
               <Button>Submit</Button>
             </Form.Group>
-          </Form>
-        </div>
-      </PrimaryLayout>
-    )
+        </Form>
+      </div>
+    </PrimaryLayout>
+  )
 }

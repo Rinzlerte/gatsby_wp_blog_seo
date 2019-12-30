@@ -3,13 +3,10 @@ import { graphql } from "gatsby"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import Post from "../components/Post"
 
-
 export default ({ data }) => {
   console.log(data)
   return (
     <PrimaryLayout column="col-xs-6">
-      
-
       {data.allWordpressPost.nodes.map((node, index) => (
         <Post
           key={index}

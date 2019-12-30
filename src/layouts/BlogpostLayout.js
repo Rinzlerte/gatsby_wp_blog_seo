@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/header_footer/Header"
+import Footer from "../components/header_footer/Footer"
 import SEO from "../components/SEO"
 import innertext from "innertext"
 const BlogpostLayout = ({ data }) => {
@@ -14,7 +14,9 @@ const BlogpostLayout = ({ data }) => {
         image={post.featured_media.source_url}
         keywords={post.categories.map(res => res.name).join(", ")}
       />
-      <Header />
+      <Header 
+        title="TESEJZ ALTER EGO POSTS"
+      />
       <main>
         <div className="container">
           <div className="row justify-content-md-center">

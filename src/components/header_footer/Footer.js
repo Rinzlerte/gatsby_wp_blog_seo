@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={FooterStyles.footer}>
             <div className="container">
-                <span className="muted">© Tesejz footer</span>
+                <span className={FooterStyles.black}>© Tesejz footer</span>
             </div>
         </footer>
     );

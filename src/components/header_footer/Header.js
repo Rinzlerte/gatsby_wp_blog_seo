@@ -9,9 +9,15 @@ const Header = (props) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-                <Nav.Link as={Link} to="/">Home</Nav.Link>
-                <Nav.Link as={Link} to="/about">About</Nav.Link>
-                <Nav.Link as={Link} to="/contacts">Contacts</Nav.Link>
+                <Nav.Link as={Link} to="/">
+                    <b className="text-dark">Home</b>
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                    <b className="text-dark">About</b>
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contacts">
+                    <b className="text-dark">Contacts</b>
+                </Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Navbar>

@@ -10,8 +10,9 @@ export default ({ data }) => {
     <PrimaryLayout column="col-xs-6">
       
 
-      {data.allWordpressPost.nodes.map(node => (
+      {data.allWordpressPost.nodes.map((node, index) => (
         <Post
+          key={index}
           alt={node.featured_media.slug}
           image={node.featured_media.source_url}
           title={node.title}
